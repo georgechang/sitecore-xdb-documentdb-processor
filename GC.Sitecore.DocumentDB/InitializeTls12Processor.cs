@@ -8,7 +8,7 @@ namespace GC.Sitecore.DocumentDB
     {
         public override void UpdateSettings(UpdateMongoDriverSettingsArgs args)
         {
-            //args.MongoSettings.SslSettings = new SslSettings {EnabledSslProtocols = SslProtocols.Tls12};
+            args.MongoSettings.SslSettings = new SslSettings {EnabledSslProtocols = SslProtocols.Tls12};
         }
     }
 }
